@@ -1,0 +1,85 @@
+.footer {
+  width: 100%;
+  background: #fff;
+  min-height: 40vh;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 5px solid #f7f7f7;
+}
+.footer .firstBlock {
+  width: 60%;
+  display: flex;
+}
+.footer .firstBlock .left,
+.footer .firstBlock .middle {
+  width: 50%;
+  font-family: var(--quicksand-font);
+  font-size: 15px;
+  padding: 40px;
+}
+.footer .firstBlock .left {
+  text-align: center;
+}
+.footer .firstBlock .left img {
+  width: 80px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.footer .firstBlock .middle h2,
+.footer .right h2 {
+  margin-bottom: 20px;
+  font-family: var(--quicksand-font);
+}
+.footer .firstBlock .middle h2 span,
+.footer .right h2 span {
+  font-family: var(--anton-font);
+  letter-spacing: 1.5px;
+}
+.footer .firstBlock .middle .bloc {
+  display: flex;
+}
+.footer .firstBlock .middle .bloc .logo svg {
+  width: 16px;
+  height: 15px;
+  margin-right: 10px;
+  color: var(--blue-dark);
+}
+
+.footer .right {
+  width: 30%;
+  padding: 40px 0;
+}
+.footer .right h2 {
+  margin-bottom: 0px;
+}
+.footer .right p {
+  font-family: var(--quicksand-font);
+  color: var(--blue-dark);
+}
+.footer .right form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.footer .right form input,
+.footer .right form textarea {
+  width: 60%;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1.5px solid var(--blue);
+  border-radius: 0 8px 0 8px;
+}
+
+.footer .right form button {
+  width: 30%;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 0 8px 0 8px;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(to left, var(--blue), var(--blue-dark));
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}

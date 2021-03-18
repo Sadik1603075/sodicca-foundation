@@ -1,0 +1,75 @@
+.createPost {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  margin: auto;
+  margin-top: 70px;
+  position: relative;
+}
+/* FORM */
+.createPost form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 10%;
+  top: 25px;
+}
+.createPost form h1 {
+  font-family: var(--anton-font);
+  position: relative;
+}
+.createPost form h1::before {
+  content: "";
+  width: 15%;
+  height: 4px;
+  border-radius: 10px;
+  background: linear-gradient(to left, var(--blue-dark), var(--blue));
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.createPost form p {
+  font-family: var(--quicksand-font);
+}
+.createPost form input,
+.createPost form textarea {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+.createPost form textarea {
+  min-height: 25vh;
+}
+.createPost form button {
+  display: block;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 20px;
+  background: linear-gradient(to left, var(--blue), var(--blue-dark));
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.createPost form button:hover {
+  background: linear-gradient(to left, var(--blue-dark), var(--blue));
+  box-shadow: var(--box-shadow);
+}
+
+.createPost .decoration {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  /* top: 50%;
+  transform: translateY(-50%); */
+  bottom: 0;
+}
+
+.createPost .decoration img {
+  width: 100%;
+}

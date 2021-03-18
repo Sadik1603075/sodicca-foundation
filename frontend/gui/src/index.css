@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "niladri";
+  src: url("../src/assets/fonts/Unicode/Li\ Niladri\ Moitree\ Unicode.ttf");
+}
+
+@font-face {
+  font-family: "rongdhonu";
+  src: url("../src/assets/fonts/Niladri/Li\ Hasan\ Rongdhonu\ Unicode.ttf");
+}
+:root {
+  --blue-ultra-light: #3366ff0f;
+  --blue-light: #99f3bd;
+  --blue: #28df99;
+  --blue-dark: #158467;
+  --yellow-light: #f2dea2;
+  --orange: #ff4133;
+  --pink: #ffa9c4;
+  --grey-light: #f8f9fa;
+  --white: #ffff;
+  --gradient-color: linear-gradient(90deg, #002366 0%, #3465bf 100%);
+  --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+  --box-shadow: 0px 6px 10px rgba(57, 56, 61, 0.205);
+  --quicksand-font: "Quicksand", sans-serif;
+  --anton-font: "Anton", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--quicksand-font);
+  background: #f7f7f7;
+}

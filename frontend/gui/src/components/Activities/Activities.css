@@ -1,0 +1,217 @@
+.activities {
+  margin-top: 55px;
+}
+
+.activities_heading {
+  display: flex;
+  flex-wrap: wrap;
+}
+.activities_heading .image {
+  width: 50%;
+  height: 70vh;
+}
+.activities_heading .image img {
+  width: 100%;
+  max-height: 70vh;
+}
+.activities_heading .text {
+  width: 50%;
+  padding: 40px 200px 40px 40px;
+  display: flex;
+  align-content: center;
+}
+.activities_heading .text .content {
+  margin-top: 40px;
+}
+.activities_heading .text .content h2 {
+  font-family: niladri;
+  font-size: 40px;
+  line-height: 45px;
+  position: relative;
+}
+.activities_heading .text .content h2:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 30%;
+  height: 8px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, var(--blue), var(--blue-dark));
+}
+.activities_heading .text .content p {
+  margin-top: -10px;
+  font-family: rongdhonu;
+  font-size: 18px;
+  font-weight: 300;
+}
+.activities_heading .text .content p span {
+  margin: 0 5px;
+  padding: 0 5px;
+  background: var(--blue-light);
+  color: var(--blue-dark);
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.activities .myActivities {
+  width: calc(100% - 400px);
+  height: fit-content;
+  margin: auto;
+  margin-top: -40px;
+}
+
+.activities .myActivities .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.col-35,
+.col-55,
+.col-30 {
+  text-decoration: none;
+  border-radius: 10px 0 10px 0;
+  position: relative;
+  height: 40vh;
+  transition: 0.3s;
+}
+.col-35:hover,
+.col-55:hover,
+.col-30:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.col-35 {
+  width: 40%;
+}
+.col-55 {
+  width: 55%;
+}
+a.col-30 {
+  width: 30%;
+  margin: 10px 0;
+}
+
+.activities .myActivities .row .activity {
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px 0 10px 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px 15px;
+}
+.activities .myActivities .row .activity h3 {
+  color: #fff;
+  font-family: niladri;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.activity .user {
+  display: flex;
+  align-self: center;
+}
+.activity .user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+  padding: 5px;
+  border: 2px solid var(--blue);
+}
+
+.activity .user .name h5 {
+  color: var(--blue);
+  font-family: rongdhonu;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 300;
+}
+.activity .user .name p {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: -3px;
+}
+
+/* //////////////////////////////////////////// */
+/* ============= SINGLE ACTIVITY ============== */
+.singleActivity {
+  width: 75%;
+  margin: 55px auto;
+  min-height: 100vh;
+}
+
+.singleActivity .main-image {
+  width: 100%;
+  margin-top: 10px;
+  height: 60vh;
+  border-radius: 10px 0 10px 0;
+}
+
+.singleActivity .author {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.singleActivity .author img {
+  height: 80px;
+  width: 80px;
+  margin-top: -40px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 10px;
+}
+.singleActivity .author .name {
+  color: var(--blue);
+  font-size: 20px;
+}
+
+.singleActivity h1.main-heading {
+  text-align: center;
+  font-family: niladri;
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+
+.singleActivity p.date {
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ccc;
+  margin-top: -15px;
+}
+
+.singleActivity .main-content {
+  font-family: rongdhonu;
+  font-size: 17px;
+  font-weight: 300;
+  color: #444;
+}
+
+.singleActivity .donar {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.singleActivity .donar .persons,
+.singleActivity .donar .heading {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--anton-font);
+}
+.singleActivity .donar .persons img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: -20px;
+  background: #fff;
+  padding: 5px;
+}

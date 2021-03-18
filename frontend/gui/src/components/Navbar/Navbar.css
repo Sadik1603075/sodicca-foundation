@@ -1,0 +1,24 @@
+.navbar {
+  width: 100%;
+  padding: 15px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.03);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  font-family: var(--quicksand-font);
+}
+.navbar__items a {
+  text-decoration: none;
+  color: var(--blue-dark);
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.navbar__items a:hover {
+  color: var(--blue);
+}

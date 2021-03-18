@@ -1,0 +1,289 @@
+.memberList {
+  margin-top: 40px;
+  background: #f7f7f7;
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vh - 40px);
+  overflow: hidden;
+}
+.sidenav {
+  width: 25%;
+  height: calc(100vh - 40px);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.mainBody {
+  width: 75%;
+  height: calc(100vh - 40px);
+}
+
+/* ==================== OVERVIEW =============== */
+.overview-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.overview {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 30%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.overview .overview-value h2 {
+  font-weight: 300;
+  font-family: var(--quicksand-font);
+  font-size: 16px;
+  margin-bottom: -5px;
+}
+.overview .overview-value h1 {
+  font-size: 20px;
+}
+.overview .overview-logo {
+  font-size: 30px;
+  height: 95%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.overview .overview-logo svg {
+  width: 18px;
+  height: 18px;
+}
+
+.overview .overview-logo.projects {
+  background: #ffb6b9;
+  color: #d45079;
+}
+.overview .overview-logo.memberr {
+  background: #f6f578;
+  color: #f0a500;
+}
+
+.overview .overview-logo.donations {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+}
+
+/* ============== HEADING =============== */
+.mainBody .heading {
+  width: 92%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: var(--anton-font);
+  margin-bottom: -4px;
+}
+.mainBody .heading .heading-pri h2 {
+  line-height: 25px;
+  font-size: 24px;
+  font-weight: 400;
+  position: relative;
+}
+.mainBody .heading .heading-pri h2::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -4px;
+  width: 10%;
+  height: 4px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, var(--blue-dark), var(--blue));
+}
+
+/* =============== RECENT MEMBERS =========== */
+.recentMembers {
+  width: 92%;
+  margin: auto;
+  margin-top: 5px;
+  font-family: var(--quicksand-font);
+  color: #444;
+}
+.recentMembers .head {
+  margin-bottom: -5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.recentMembers .info {
+  background: #fff;
+  border-bottom: 4px solid #f7f7f7;
+}
+.recentMembers .head,
+.recentMembers .info {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.recentMembers .head .member-info,
+.recentMembers .info .member-info {
+  width: 40%;
+  padding: 5px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.recentMembers .head .donation-info,
+.recentMembers .info .donation-info {
+  width: 20%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.recentMembers .head .donation-amount,
+.recentMembers .info .donation-amount {
+  width: 20%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.recentMembers .head .volntr,
+.recentMembers .info .volntr {
+  width: 20%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.recentMembers .info .member-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.recentMembers .info .member-info .person {
+  height: fit-content;
+}
+.recentMembers .info .member-info .person h3 {
+  font-family: var(--quicksand-font);
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.recentMembers .info .member-info .person p {
+  color: #ccc;
+  font-size: 13px;
+  line-height: 13px;
+  margin-bottom: 0px;
+}
+.recentMembers .info .member-info .person span {
+  font-weight: bold;
+}
+
+.recentMembers .info .donation-info .weekly,
+.recentMembers .info .donation-info .monthly,
+.recentMembers .info .donation-info .yearly {
+  width: 50%;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: var(--quicksand-font);
+}
+
+.recentMembers .info .donation-info .weekly {
+  background: #b2ebf2;
+  color: #00bcd4;
+}
+.recentMembers .info .donation-info .monthly {
+  background: #ffb6b9;
+  color: #d45079;
+}
+.recentMembers .info .donation-info .yearly {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+}
+
+.recentMembers .info .donation-amount,
+.recentMembers .info .volntr {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ==================== SIDENAV ADMINS ======== */
+.sidenav .admins {
+  width: 100%;
+  padding: 20px;
+}
+
+.sidenav .admins .admin {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 4px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.sidenav .admins h1 {
+  font-family: var(--anton-font);
+  position: relative;
+}
+.sidenav .admins h1::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -4px;
+  width: 15%;
+  height: 4px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, var(--blue-dark), var(--blue));
+}
+.sidenav .admins .admin .admin-name h2 {
+  font-size: 16px;
+  font-family: var(--quicksand-font);
+  margin-bottom: -4px;
+}
+.sidenav .admins .admin .admin-name h3 {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: -2px;
+}
+.sidenav .admins .admin img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.sidenav .logobox {
+  padding: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.sidenav .logobox img {
+  height: 100px;
+}
+.sidenav .wave {
+  width: 90%;
+  margin: 20px auto;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  height: 50vh;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.sidenav .wave img {
+  width: 100%;
+  position: absolute;
+}
+.sidenav .wave img.wave1 {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 10px 10px;
+}
+.sidenav .wave img.wave2 {
+  bottom: 20px;
+  left: 0;
+}

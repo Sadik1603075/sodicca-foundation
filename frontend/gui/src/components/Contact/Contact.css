@@ -1,0 +1,66 @@
+.contactt {
+  width: 90%;
+  margin: auto;
+  margin-top: 70px;
+  min-height: calc(100vh - 70px);
+}
+
+.contactt h1 {
+  font-family: var(--anton-font);
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.contactt h1::before {
+  content: "";
+  width: 6%;
+  height: 4px;
+  border-radius: 10px;
+  background: linear-gradient(to left, var(--blue-dark), var(--blue));
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+}
+
+.helps {
+  margin-top: 40px;
+}
+.help.head .mail,
+.help.head .name,
+.help.head .message {
+  font-weight: bold;
+  font-size: 17px;
+  color: var(--blue);
+}
+.help {
+  text-decoration: none;
+  color: #444;
+  cursor: pointer;
+  display: flex;
+  border: 1px solid #ccc;
+}
+.help:hover {
+  color: #444;
+  background: #f7f7f7;
+}
+.help.head {
+  margin-bottom: 10px;
+  border-radius: 0 10px 0 10px;
+  background: #f7f7f7;
+}
+
+.help .mail,
+.help .name,
+.help .message {
+  padding: 10px 20px;
+  border-right: 1px solid #ccc;
+  font-size: 16px;
+  font-family: rongdhonu;
+}
+.help .mail,
+.help .name {
+  width: 25%;
+}
+.help .message {
+  width: 50%;
+}
